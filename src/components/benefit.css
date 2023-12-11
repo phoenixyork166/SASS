@@ -1,0 +1,13 @@
+@media only screen and (max-width: 450px) {
+    .bbenefitContainer {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .benefitItem div {
+        min-width: 300px !important;
+        height: 250px;
+
+    }
+}

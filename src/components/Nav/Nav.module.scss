@@ -1,0 +1,255 @@
+/* *{
+ height: 1000vh;   
+} */
+@import "../../sass/abstracts/_variables.scss";
+@import "../../sass/components/button";
+@import "../../sass/base/animations";
+@import "../../sass/components/frosted";
+
+/* container */
+.container {
+    display: 'flex';
+    flex-flow: row wrap;
+    background-color: rgba($color-primary, 1);
+}
+
+.navgt {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 18rem;
+    background-color: rgba($color-primary-light2, 1);
+    padding-inline: 2%;
+}
+
+.logo {
+    top: 5;
+    position: 'fixed';
+    color: rgba(255, 157, 40, 1);
+    font-size: 2rem;
+    font-weight: var(--fw-700);
+    text-decoration: none;
+    transition: transform 0.5s;
+    display: inline-block;
+    font-family: 'Caveat', cursive;
+    margin-right: 1rem;
+
+    &__h3 {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+.logo:hover {
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    /* transform: rotate3d(1,0.5,0.1,-30deg) scale(1.1); */
+    flex-grow: 0.5rem;
+    
+    /* text-decoration: underline; */
+}
+
+.navShow {
+    background-color: rgba($color-primary-light, 1);
+}
+.navShowList {
+    background-color: rgba($color-primary-light, 1);
+    display: flex;
+    flex-direction: row;
+    justify-Content: space-between;
+    align-items: center;
+    padding-inline: 10;
+}
+
+.navHideList {
+    background-color: rgba($color-primary-light2, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 10;
+    align-items: center;
+}
+
+.falist {
+    visibility: visible;
+    top: "";
+    color: rgba($color-secondary-dark, 1);
+    transition: 0.1s;
+    margin-right: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    
+    // Frosted Container:before
+    &:before {
+        background: inherit;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: inset 0 0 200rem rgba($font-light, 0.5);
+        filter: blur(1.2rem);
+        // Allow contents to be seen & hovered above the glass
+        z-index: -1;
+    }
+
+    &:hover {
+        // Menu native effects
+        color: rgba($color-secondary-light, 1);
+        scale: 1.03;
+        transform: translateY(0.5rem);
+        box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba($font-light, 1);
+
+        // Frosted when hovered
+        
+        border-radius: 1.6rem;
+        background: linear-gradient(to bottom right, $font-light, $font, $font-dark, 0.8);
+        //box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(1.5rem);
+        -webkit-backdrop-filter: blur(1.5rem);
+        border: 1px solid rgba($font-dark, 0.803);
+        position: relative;
+        background: inherit;
+        overflow: hidden;
+        // Allow contents to be seen & hovered above the glass
+        z-index: 1;
+    }
+
+    &:active {
+        color: rgba($color-secondary-dark, 1);
+        scale: 0.9;
+        box-shadow: 0 0 0 0 ;
+        //transform: translateY(0rem);
+    }
+}
+
+.falist-0 {
+    visibility: hidden;
+}
+
+.fa1list-1 {
+    visibility: visible;
+}
+
+.imcross {
+    visibility: visible;
+    top: "";
+    transition: 0.1s;
+    margin-right: 1rem;
+    color: rgba($color-secondary-dark, 1);
+
+    &:hover {
+        color: rgba($color-secondary-light, 1);
+        scale: 1.1;
+        transform: translateY(0.5rem);
+        //box-shadow: 0.6rem 0.6rem 0.6rem 0.6rem rgba($color-primary-dark, 0.8);
+        box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba($font-light, 1);
+    }
+    &:active {
+        color: rgba($color-secondary-dark, 1);
+        scale: 0.9;
+        transform: translateY(0);
+        box-shadow: 0 0 0 0;
+    }
+}
+
+.ls {
+    margin-bottom: 15px;
+    height: 0vh;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 60px;
+    padding-inline: 20;
+}
+
+.lswrap {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(6, 15%);
+    gap: 10px;
+}
+
+.lk {
+    //color: var(--white-1);
+    color: rgba($color-secondary-dark, 1);
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-block: 10px 0;
+    border-bottom: 10px solid transparent;
+    text-decoration: none;
+    transition: 0.05s;
+    display: inline-block;
+    
+    &:hover {
+        padding: 0.6rem;
+        border-radius: 1.5rem;
+        scale: 1.02;
+        transform: translateY(0.5rem);
+        color: rgba($font-light, 1);
+        //border-radius: 1rem;
+        box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba($color-primary-dark, 0.8);
+        background-color: rgba($color-primary-light, 1);
+        /* transform: rotate3d(1, 0.5, 0.1, -30deg) scale(1.2); */
+        flex-grow: 5px;
+        text-decoration: underline;  
+    }
+    &:active {
+        color: rgba($color-white, 1);
+        background-color: rgba($color-primary-dark, 1);
+        scale: 0.9;
+        transform: translate(0rem);
+        box-shadow: 0 0 0 0;
+    }
+}
+
+.contactus {
+    color: rgba($color-secondary-dark, 1);
+    font-size: 1.6rem;
+    font-weight: 600;
+    //background-color: rgba($color-primary-dark, 1);
+    text-decoration: none;
+    border-top: 0px solid transparent;
+    border: 10px 10px 10px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px 8px;
+    transition: 0.05s;
+    display: inline-block;
+
+    &:hover {
+        scale: 1.02;
+        transform: translateY(0.5rem);
+        color: rgba($footer-light, 1);
+        background-color: rgba($font-light, 1);
+        /* text-decoration: none; */
+        border-top: 0px solid transparent;
+        //border: 10px 10px 10px 10px;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        padding: 1rem 0.8rem;
+        /* transform: rotate3d(1, 0.5, 0.1, -30deg) scale(1.2); */
+        flex-grow: 0.5rem;
+        box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba($color-primary-light, 1);
+    }
+    &:active {
+        color: rgba($font-light, 1);
+        background-color: rgba($color-primary-light, 1);
+        scale: 0.9;
+        transform: translateY(0rem);
+        box-shadow: 0 0 0 0;
+    }
+}
+
+.themecolors {
+    background-color: rgba(31, 78, 89, 1);
+    background-color: rgba(126, 181, 185, 1);
+    background-color: rgba(238, 234, 229, 1);
+    background-color: rgba(255, 157, 40, 1);
+    background-color: rgba(234, 107, 31, 1);
+}
+

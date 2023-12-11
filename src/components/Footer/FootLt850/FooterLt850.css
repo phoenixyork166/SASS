@@ -1,0 +1,18 @@
+.footer {
+  background-color: rgb(94, 96, 64);
+}
+
+.containerLt {
+  background-color: rgb(94, 96, 64);
+}
+.containerLt__session {
+  display: flex;
+  flex-direction: row;
+  margin: 0rem 2rem;
+  padding: 2rem 0;
+  justify-content: flex-start;
+}
+.containerLt__session--text {
+  color: #fff;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=FooterLt850.css.map */

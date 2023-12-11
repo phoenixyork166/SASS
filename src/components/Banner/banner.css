@@ -1,0 +1,89 @@
+.trial:hover {
+  cursor: pointer;
+  background-color: white !important;
+  ;
+  color: rgba(255, 157, 40, 1) !important;
+  border-color: rgba(255, 157, 40, 1) !important;
+  border: 3px solid !important;
+}
+
+.bannerContainer {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  align-items: center;
+}
+
+.bannerTextContainer {
+  width: 40%;
+  margin-left: 10%;
+  flex-direction: 'column',
+}
+
+.bannerTextContainer h1 {
+  font-size: 2em !important;
+  color: rgba(255, 157, 40, 1)
+}
+
+.bannerTextContainer h2 {
+  font-size: 1.4em !important;
+  color: rgba(234, 107, 31, 1);
+
+}
+
+.bannerTextContainer text {
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  .bannerContainer {
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+
+  .bannerTextContainer {
+    width: 80%;
+  }
+
+  .bannerTextContainer h1 {
+    font-size: 2em !important;
+    color: rgba(255, 157, 40, 1)
+  }
+
+  .bannerTextContainer h2 {
+    font-size: 1.5em !important;
+    color: rgba(234, 107, 31, 1);
+
+  }
+
+  .bannerTextContainer text {
+    font-size: 1.3em !important;
+    line-height: 2;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .bannerTextContainer h1 {
+    font-size: 1.5em !important;
+    color: rgba(255, 157, 40, 1)
+  }
+
+  .bannerTextContainer h2 {
+    font-size: 1.2em !important;
+    color: rgba(234, 107, 31, 1);
+
+  }
+
+  .bannerTextContainer text {
+    font-size: 1em !important;
+    line-height: 2;
+  }
+
+  img {
+    width: 80%;
+  }
+}

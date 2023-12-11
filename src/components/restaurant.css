@@ -1,0 +1,14 @@
+@media only screen and (max-width: 450px) {
+    .restaurantImgs {
+        width: 80vw !important;
+        height: 40vw !important;
+    }
+
+    .restauranrContainer {
+        width: 80vw !important;
+        width: 80vh !important;
+
+    }
+
+
+}

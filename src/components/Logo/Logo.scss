@@ -1,0 +1,22 @@
+@import '../../sass/abstracts/variables';
+@import '../../sass/abstracts/mixins';
+@import '../../sass/layouts/grid';
+@import '../../sass/layouts/header';
+@import '../../sass/base/animations';
+@import '../../sass/components/frosted';
+
+.logo-container {
+    transition: 0.5s;
+
+    &:hover {
+        scale: 1.05;
+    
+    }
+    &:active {
+        scale: 1.00;
+    }
+
+    &__img {
+
+    }
+}

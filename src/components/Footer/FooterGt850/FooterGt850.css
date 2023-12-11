@@ -1,0 +1,19 @@
+.footer {
+  background-color: rgb(94, 96, 64);
+}
+
+.containerGt {
+  background-color: rgb(94, 96, 64);
+  display: flex;
+  flex-direction: row;
+}
+.containerGt__session {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 3rem 2rem;
+}
+.containerGt__session--text {
+  color: #fff;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=FooterGt850.css.map */

@@ -1,0 +1,22 @@
+@media only screen and (max-width: 450px) {
+    .moduleText {
+        font-size: 1em !important;
+
+    }
+
+    .imgContainer {
+        flex-direction: column;
+        height: 80vh !important;
+        width: 80vw !important;
+        justify-content: center !important;
+        ;
+    }
+
+    .imgContainer div {
+        width: 80vw !important;
+        height: 80vh !important;
+    }
+
+
+
+}

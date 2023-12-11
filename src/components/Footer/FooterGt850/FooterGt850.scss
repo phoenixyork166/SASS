@@ -1,0 +1,49 @@
+@import "../../../sass/abstracts/variables";
+@import "../../../sass/abstracts/mixins";
+@import "../../../sass/layouts/grid";
+
+.footer {
+    background-color: rgba($footer-dark, 1);
+}
+
+.containerGt {
+    background-color: rgba($footer-dark, 1);
+    display: flex;
+    flex-direction: row;
+
+    &__session {
+        background-color: rgba($footer-dark, 1);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 2rem 2rem;
+        
+        &--img {
+            margin-right: 1rem;
+            transition: 0.5s;
+            &:hover {
+                transform: translateY(-0.3rem);
+            }
+        }
+
+        &--text {
+            color: rgba($font-light, 0.9);
+            font-size: 1.8rem;
+            margin-right: 0rem;
+            transition: 0.5s;
+
+            &:hover {
+                color: $color-primary-light;
+                transform: translateY(-0.3rem);
+                border-radius: 100rem;
+                box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba($footer-light, 0.2);
+            }
+            &:active {
+                color: $color-white;
+                //transform: translateY(0);
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/components/button";
+@import "../../sass/layouts/grid";
+@import "../../sass/base/animations";
+// Custom Google Font Family
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+    margin: 0;
+    font-family: "Roboto";
+}
+ 
+.root {
+    width: 45vw;
+    //width: 90vw;
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    align-items: center;
+    //height: 100vh;
+    //background-color: rgba($color-primary-light, 1);
+}   
+
+// 09:15
+.slideshow {
+    overflow: hidden;
+    //width: calc((100% - 10rem));
+    //width: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__inner {
+        white-space: nowrap;
+        transition: transform 0.3s;
+        box-shadow: 0 0.5rem 1.5rem rgba($color-black, 0.05);
+        
+    }
+    // .slideshow__btn
+    &__btn {
+        display: flex;
+        justify-content: space-evenly;
+
+        // .slideshow__btn--arrow
+        &--arrow {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-top: 2rem;
+            color: rgba($color-secondary-dark2, 1);
+            transition: 0.1s;
+            padding: 0.5rem;
+
+            &:hover {
+                //border: 0.1rem solid rgba($color-black, 0.3);
+                color: rgba($font, 1);
+                //box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba($color-black, 0.6);
+                box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba($font-light, 0.8);
+                transform: translateY(-0.5rem);
+            }
+            &:active {
+                //border: "";
+                box-shadow: 0;
+                transform: translateY(0);
+            }
+            &::after {
+
+            }
+        }
+    }
+}
+
+.indicators {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+
+    // .indicators--btn
+    &--btn {
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.indicators > button {
+    margin: 0.5rem;
+    background: none;
+}
+
+// For Slideshow.jsx Line 83 to 87
+.indicator-symbol {
+    //color: rgba($color-tertiary-dark, 1);
+    color: rgba($color-secondary-dark2, 1);
+}
+.indicator-symbol-active {
+    color: rgba($font-light, 1);
+}
+
+.slideshowItem {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 49rem;
+    //background-color: rgba($color-primary-light, 1);
+
+    &--img {
+        width: auto;
+        // WORK ON AUTO SCALING!! 21 Nov 2023
+        height: 45rem;
+        padding: 0 2rem 0 2rem;
+    }
+
+    &--text {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 4rem 0 4rem 0;
+        padding: 0 2rem 0 rem;
+        white-space: normal;
+        color: rgba($footer, 1);
+    }
+}
