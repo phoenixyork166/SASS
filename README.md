@@ -1,4 +1,4 @@
-## My beloved Wing jei &amp; my shared React & SASS library <3
+## My Fullstack dev wife &amp; my shared React & SASS library <3
 
 ## Usage 
 ## This is a lib for React components & Sass
