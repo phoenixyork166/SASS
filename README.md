@@ -1,5 +1,5 @@
 ## My Fullstack dev wife &amp; my shared React & SASS library <3
-
+[![Sass](https://uploads.sitepoint.com/wp-content/uploads/2013/03/1501598563featured-getting-started-sass.jpg)]
 ## Usage 
 ## This is a lib for React components & Sass
 ## git clone <.git>
